@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdc24ede-cdef-4458-a6d9-717e52c5fc8b" name="Changes" comment="" />
+    <list default="true" id="cdc24ede-cdef-4458-a6d9-717e52c5fc8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/veterinarnaya-klinika.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/veterinarnaya-klinika.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/base.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/base.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,8 +22,12 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -28,18 +37,85 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Рафаэль/Documents/GitHub/veterinarnaya-klinika/sql/base.sql",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "sql.codeStylePanel.last.previewDialect": "SQL2016",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "sqlite"
+    ],
+    "RunConfigurationTargetLRU": [
+      "978b4dde-46be-4d09-a7af-710069434047",
+      "b35142c2-ad8b-4d9a-8f2d-afae35c5af57",
+      "e169dce9-7c54-43d7-9e33-90af1a900ee1",
+      "286e74b6-dd5a-4230-a1cb-cfc736eb95a8"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "SQLite"
+    ]
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Рафаэль\Documents\GitHub\veterinarnaya-klinika\sql" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Рафаэль\Documents\GitHub\veterinarnaya-klinika\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Database Script.base.sql">
+    <configuration type="DatabaseScript" editBeforeRun="true">
+      <script-file value="$PROJECT_DIR$/sql/base.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="978b4dde-46be-4d09-a7af-710069434047" />
+      <method v="2" />
+    </configuration>
+    <configuration name="base.sql" type="DatabaseScript">
+      <script-file value="$PROJECT_DIR$/sql/base.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="286e74b6-dd5a-4230-a1cb-cfc736eb95a8" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="veterinarnaya-klinika" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Рафаэль\Documents\GitHub\veterinarnaya-klinika\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.10 (veterinarnaya-klinika)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Programs/Python/Python310/" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Database Script.base.sql" />
+      <item itemvalue="Python.Unnamed" />
+    </list>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,11 +125,23 @@
       <option name="presentableId" value="Default" />
       <updated>1671228288883</updated>
       <workItem from="1671228294100" duration="2632000" />
-      <workItem from="1671256162550" duration="819000" />
+      <workItem from="1671256162550" duration="7696000" />
+      <workItem from="1671653370022" duration="1547000" />
+      <workItem from="1671737747001" duration="1871000" />
+      <workItem from="1671980547142" duration="11335000" />
+      <workItem from="1671996360151" duration="7996000" />
+      <workItem from="1672004381612" duration="8477000" />
+      <workItem from="1672013161647" duration="1524000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/veterinarnaya_klinika$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1672006277806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
 </project>
