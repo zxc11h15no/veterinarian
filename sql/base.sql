@@ -1,5 +1,4 @@
-CREATE TABLE IF NOT EXISTS animals
-(
+CREATE TABLE IF NOT EXISTS animals(
     id            INTEGER PRIMARY KEY,
     species       VARCHAR(100) NOT NULL,
     breed         VARCHAR(100) NOT NULL,
@@ -17,39 +16,33 @@ CREATE TABLE IF NOT EXISTS animals
         ON DELETE SET NULL ON UPDATE NO ACTION,
     FOREIGN KEY (owner)
         REFERENCES client_code (id)
-        ON DELETE SET NULL ON UPDATE NO ACTION
-);
+        ON DELETE SET NULL ON UPDATE NO ACTION);
 
-CREATE TABLE IF NOT EXISTS types_of_animals
-(
+
+CREATE TABLE IF NOT EXISTS types_of_animals(
     id           INTEGER PRIMARY KEY,
     species_code INTEGER NOT NULL,
-    species_name VARCHAR(100)
-);
+    species_name VARCHAR(100));
 
 
-CREATE TABLE IF NOT EXISTS breeds
-(
+CREATE TABLE IF NOT EXISTS breeds(
     id              INTEGER PRIMARY KEY,
     breed_code      VARCHAR(100) NOT NULL,
     types_of_animal VARCHAR(100) NOT NULL,
     breed_name      VARCHAR(100) NOT NULL,
     FOREIGN KEY (types_of_animal)
         REFERENCES species_code (id)
-        ON DELETE SET NULL ON UPDATE NO ACTION
-);
+        ON DELETE SET NULL ON UPDATE NO ACTION);
 
-CREATE TABLE IF NOT EXISTS client
-(
+
+CREATE TABLE IF NOT EXISTS client(
     id           INTEGER PRIMARY KEY,
     full_name    VARCHAR(100) NOT NULL,
     address      VARCHAR(100) NOT NULL,
     phone_number INTEGER      NOT NULL,
-    email        VARCHAR(100) NOT NULL
-);
+    email        VARCHAR(100) NOT NULL);
 
-CREATE TABLE IF NOT EXISTS visit_log
-(
+CREATE TABLE IF NOT EXISTS visit_log(
     id          INTEGER PRIMARY KEY,
     the_date    DATE         NOT NULL,
     client      VARCHAR(100) NOT NULL,
@@ -59,19 +52,16 @@ CREATE TABLE IF NOT EXISTS visit_log
         ON DELETE SET NULL ON UPDATE NO ACTION,
     FOREIGN KEY (client)
         REFERENCES client_code (id)
-        ON DELETE SET NULL ON UPDATE NO ACTION
-);
+        ON DELETE SET NULL ON UPDATE NO ACTION);
 
-CREATE TABLE IF NOT EXISTS medicines
-(
+
+CREATE TABLE IF NOT EXISTS medicines(
     id          INTEGER PRIMARY KEY,
     name        VARCHAR(15)  NOT NULL,
-    description VARCHAR(100) NOT NULL
-);
+    description VARCHAR(100) NOT NULL);
 
 
-CREATE TABLE IF NOT EXISTS used_medicines
-(
+CREATE TABLE IF NOT EXISTS used_medicines(
     id               INTEGER PRIMARY KEY,
     in_the_visit_log VARCHAR(100) NOT NULL,
     medication_code  INTEGER      NOT NULL,
@@ -82,12 +72,10 @@ CREATE TABLE IF NOT EXISTS used_medicines
         ON DELETE SET NULL ON UPDATE NO ACTION,
     FOREIGN KEY (in_the_visit_log)
         REFERENCES in_the_log (id)
-        ON DELETE SET NULL ON UPDATE NO ACTION
-);
+        ON DELETE SET NULL ON UPDATE NO ACTION);
 
 
-CREATE TABLE IF NOT EXISTS service
-(
+CREATE TABLE IF NOT EXISTS service(
     id               INTEGER PRIMARY KEY,
     in_the_visit_log VARCHAR(100) NOT NULL,
     employee         VARCHAR(100) NOT NULL,
@@ -101,20 +89,16 @@ CREATE TABLE IF NOT EXISTS service
         ON DELETE SET NULL ON UPDATE NO ACTION,
     FOREIGN KEY (employee)
         REFERENCES employees_code (id)
-        ON DELETE SET NULL ON UPDATE NO ACTION
-);
+        ON DELETE SET NULL ON UPDATE NO ACTION);
 
 
-CREATE TABLE IF NOT EXISTS services
-(
+CREATE TABLE IF NOT EXISTS services(
     id    INTEGER PRIMARY KEY,
     name  VARCHAR(15) NOT NULL,
-    price INTEGER     NOT NULL
-);
+    price INTEGER     NOT NULL);
 
 
-CREATE TABLE IF NOT EXISTS employees
-(
+CREATE TABLE IF NOT EXISTS employees(
     id           INTEGER PRIMARY KEY,
     full_name    VARCHAR(100) NOT NULL,
     address      VARCHAR(100) NOT NULL,
@@ -123,14 +107,11 @@ CREATE TABLE IF NOT EXISTS employees
     job_title    VARCHAR(100) NOT NULL,
     FOREIGN KEY (job_title)
         REFERENCES job_title_code (id)
-        ON DELETE SET NULL ON UPDATE NO ACTION
-);
+        ON DELETE SET NULL ON UPDATE NO ACTION);
 
-CREATE TABLE IF NOT EXISTS job_title
-(
+CREATE TABLE IF NOT EXISTS job_title(
     id    INTEGER PRIMARY KEY,
-    named VARCHAR(15) NOT NULL
-);
+    named VARCHAR(15) NOT NULL);
 
 INSERT INTO animals(species, breed, moniker, owner, gender, date_of_birth, coloring, information)
 VALUES ('species', 'breed', 'moniker', 'owner', 'gender', 'date_of_birth', 'coloring', 'information'),
