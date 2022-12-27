@@ -3,6 +3,7 @@ from sql_base import base_worker
 from settings import BASE_PATH
 from routers.animals import animals_router
 from routers.subjects import subj_router
+from routers.breeds import breeds_router
 
 base_worker.set_base_path(BASE_PATH)
 
@@ -13,3 +14,4 @@ app = FastAPI()
 
 app.include_router(animals_router, prefix='/animals')
 app.include_router(subj_router, prefix='/subjects')
+app.include_router(breeds_router, prefix='/breeds')
