@@ -14,6 +14,13 @@ class animals(BaseModel):
     information: Optional[str]
 
 
+class breeds(BaseModel):
+    id: Optional[int]
+    breed_code: Optional[int]
+    types_of_animal: Optional[int]
+    breed_name: Optional[int]
+
+
 class User(BaseModel):
     login: str
     password: str
